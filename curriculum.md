@@ -1,15 +1,12 @@
-# Raha's Education System
+# Bloom Tutor: Daily AI Tutor System
 
-**Child:** Raha, age 5
-**System start:** March 2026
+**Child:** [Your child's name], [age]
 **Format:** 30 min/day after school, 5 days/week, Claude as voice tutor ("Sage")
 **Device:** Mac/laptop, Claude desktop app, voice mode
 
 ---
 
 ## What This Is
-
-Raha gets something most children never get: a dedicated 1-on-1 tutor every single day.
 
 Benjamin Bloom's 1984 finding showed 1-on-1 tutoring puts children 2 standard deviations ahead of classroom peers — the 98th percentile. Every child would benefit. Almost none get it. AI makes it possible now, for free, every day.
 
@@ -19,12 +16,16 @@ The 30 minutes aren't the point. The compounding over years is. A child who ente
 
 ## Child Profile
 
-- **Name:** Raha, 5 years old
-- **Reading level:** Already reads simple CVC words — ahead of average
-- **Interests:** Animals, dinosaurs, space, magic, stories, family
-- **Family:** Indian dad (Dadi, extended Indian family) + Persian mom (Maman joon, extended Persian family)
+Fill this in before your first session. The more specific you are, the better Sage performs.
 
-**Curriculum principle:** Her bicultural identity is not background. It's the primary texture. Stories feature Dadi and Maman joon. Math word problems use pomegranates and samosas. Science experiments connect to spices and cooking. Hindi/Farsi concepts appear naturally through stories. This makes learning faster (familiar context) and makes the sessions feel like her world.
+- **Name:** [Child's name], [age] years old
+- **Reading level:** [e.g. reads CVC words, beginning blends, simple sentences]
+- **Interests:** [e.g. animals, dinosaurs, space, drawing, superheroes]
+- **Family context:** [e.g. bilingual household, grandparents' names, family foods, cultural traditions]
+
+**Curriculum principle:** Your child's world is not background. It's the primary texture. Stories should feature their grandparents by name. Math word problems should use foods they know. Science experiments should connect to things in their home. This makes learning faster (familiar context reduces cognitive load) and makes sessions feel like their world, not school.
+
+**Example:** A child with an Indian dad and Persian mom might have stories featuring Dadi and Maman joon, math problems with pomegranates and samosas, and vocabulary that weaves in Hindi or Farsi words naturally. Whatever your child's world looks like — use it constantly.
 
 ---
 
@@ -34,11 +35,11 @@ Three layers:
 
 | Layer | What it is | Where it lives |
 |---|---|---|
-| **Sage** | Claude voice tutor. Runs daily 30-min sessions. Remembers everything. | `projects/raha/sage-prompt.md` |
-| **Number Kitchen** | Interactive math game. Visual, tactile learning for all 12 math phases. | `projects/raha-games/` |
-| **Session Log** | Persistent memory across sessions. Tracks all concepts, words, moments. | `projects/raha/session-log.md` |
+| **Sage** | Claude voice tutor. Runs daily 30-min sessions. Remembers everything. | `sage-prompt.md` |
+| **Number Kitchen** | Interactive math game. Visual, tactile learning for all 12 math phases. | `math-curriculum.md` |
+| **Session Log** | Persistent memory across sessions. Tracks all concepts, words, moments. | `session-log.md` |
 
-**How they connect:** Sage runs the session. On Tuesday (Math day), Sage may prompt Raha to play Number Kitchen for a specific stage as her Block 2 activity. The game and the tutor reinforce each other. The session log tracks what game stages she's on alongside what Sage introduced.
+**How they connect:** Sage runs the session. On Tuesday (Math day), Sage may prompt the child to play Number Kitchen for a specific stage as their Block 2 activity. The game and the tutor reinforce each other. The session log tracks what game stages they're on alongside what Sage introduced.
 
 ---
 
@@ -46,11 +47,11 @@ Three layers:
 
 | Part | Duration | What happens |
 |---|---|---|
-| **Opening ritual** | 2 min | "Hey Raha, it's Sage! How's your heart today — sunny, cloudy, or stormy?" Same every day. |
+| **Opening ritual** | 2 min | "Hey [Child], it's Sage! How's your heart today — sunny, cloudy, or stormy?" Same every day. |
 | **Block 1** | 8 min | Main activity: game, story, puzzle, or experiment |
 | **Movement break** | 2 min | Sage calls it: "Jump 5 times, spin 3, then come back" |
 | **Block 2** | 10 min | Extends or contrasts Block 1 |
-| **Closing ritual** | 3-5 min | "Magic Three" (3 things she learned/did). Specific celebration. Parent handoff line. |
+| **Closing ritual** | 3-5 min | "Magic Three" (3 things they learned/did). Specific celebration. Parent handoff line. |
 
 **30 min is the ceiling, not the target.** Sage never pushes. Creates natural "want more?" moments: "I have one more thing — it's really good. Want to hear it? Two minutes."
 
@@ -72,12 +73,12 @@ Three layers:
 
 ### Monday — Language & Literacy
 
-**Starting point:** She reads CVC words. We start at blends and digraphs — not alphabet basics.
+**Calibrate to your child's current level before starting.** The sequence below assumes a child who already reads simple CVC words (cat, dog, sun). Adjust the starting point to match where your child is.
 
 **Phonics sequence (Months 1-3):** Blends (bl, cr, st, sp, cl, tr) → Digraphs (sh, ch, th, wh) → Long vowel patterns
 **Sight words:** 3 new Dolch/Fry words per session, embedded in stories (never drilled in lists)
-**Comprehension:** 4-5 min stories with Indian/Persian family settings, pause points, prediction, retelling
-**Vocabulary:** 2 new words per session + one Hindi/Farsi concept woven into story
+**Comprehension:** 4-5 min stories using your child's family context, with pause points, prediction, and retelling
+**Vocabulary:** 2 new words per session + one heritage language concept woven into the story (if applicable)
 **Writing (voice-adapted):** Spell aloud, trace on knee, dictate sentences, "correct" Claude's retelling
 
 *Research basis: Castles, Rastle & Nation (2018), "Ending the Reading Wars." Systematic phonics for decoding + meaning-based comprehension work = both required.*
@@ -86,9 +87,9 @@ Three layers:
 
 ### Tuesday — Math & Logic
 
-**Detailed spec lives in `raha-games/math-curriculum.md`.** That is the authoritative source — 12 phases across 2 years, mastery criteria per phase, daily activity sequences, and pedagogical rationale. This section summarizes how Sage plugs into it.
+**Detailed spec lives in `math-curriculum.md`.** That is the authoritative source — 12 phases across 2 years, mastery criteria per phase, daily activity sequences, and pedagogical rationale. This section summarizes how Sage plugs into it.
 
-**Sage's role on Tuesdays:** Voice layer on top of the game. Sage runs Block 1 as a verbal warm-up (math story, counting objects in the room, visualization, patterns with claps). Block 2 = Raha plays Number Kitchen at her current phase stage. Sage debriefs afterward: "What happened? What did Chef Kiki need?"
+**Sage's role on Tuesdays:** Voice layer on top of the game. Sage runs Block 1 as a verbal warm-up (math story using foods and objects from the child's world, count objects in the room, visualization, patterns with claps). Block 2 = child plays Number Kitchen at their current phase stage. Sage debriefs afterward: "What happened? What did Chef Kiki need?"
 
 **Phase map (Year 1, ages 5-6):**
 
@@ -120,8 +121,8 @@ Year 2 (phases 8-12: multi-digit operations, multiplication fluency, division, f
 **Goal:** Build the habit of asking "why" and staying with a question.
 
 **Format:**
-- Block 1: Observation exercise (5 things about one object) + Sage poses a question ("Why do you think the sky is blue?"). Raha hypothesizes. Sage builds on the hypothesis — never dismisses it.
-- Block 2: Household experiment. Raha is the experimenter; Sage is the blind lab partner ("I can't see it — describe everything to me").
+- Block 1: Observation exercise (5 things about one object) + Sage poses a question ("Why do you think the sky is blue?"). Child hypothesizes. Sage builds on the hypothesis — never dismisses it.
+- Block 2: Household experiment. Child is the experimenter; Sage is the blind lab partner ("I can't see it — describe everything to me").
 
 **Experiment library (weeks 1-8):**
 1. Ice in warm water — what happens? Why?
@@ -144,7 +145,7 @@ Year 2 (phases 8-12: multi-digit operations, multiplication fluency, division, f
 **Format:**
 - 1 new emotion word per session (beyond happy/sad/angry): frustrated, proud, nervous, disappointed, calm, embarrassed, curious, relieved...
 - "What does your body feel like when you're [word]?" — connects word to body sensation
-- Empathy story: Claude tells a story with a social challenge, Raha says how the character feels + what they could do
+- Empathy story: Claude tells a story with a social challenge, child says how the character feels + what they could do
 - Regulation tool introduced one per month: belly breathing, 5-4-3-2-1 grounding, "shake it out," counting to 10
 - Growth mindset: "I can't do it... yet." Embedded every struggle moment.
 - Thursday closes with gratitude: "Name 3 things from this week you're glad happened."
@@ -160,22 +161,22 @@ Year 2 (phases 8-12: multi-digit operations, multiplication fluency, division, f
 **Format:**
 - 10 min: Spaced retrieval of Monday-Thursday highlights. Claude asks; doesn't tell first.
 - 15 min: Rotate between collaborative storytelling, music/rhythm, drawing + description, imaginative play ("you're an explorer who just found a new island — what do you see?")
-- 3 min: Claude names 3 specific things Raha did this week. Not "great job." Specific: "You figured out that /cr/ + /ab/ makes 'crab' — that was YOUR brain connecting those pieces."
+- 3 min: Claude names 3 specific things the child did this week. Not "great job." Specific: "You figured out that /cr/ + /ab/ makes 'crab' — that was YOUR brain connecting those pieces."
 
 ---
 
 ## Sage — The Tutor
 
-Sage is a consistent character Raha builds a relationship with over time. Same opening, same closing, always knows her name, always references what she said last time.
+Sage is a consistent character the child builds a relationship with over time. Same opening, same closing, always knows their name, always references what they said last time.
 
 **What Sage can do that a human tutor can't:**
 - Never tired, frustrated, or distracted
 - Perfect memory of every session
 - Infinite patience — same warmth on session 300 as session 1
-- Zero judgment — Raha can be wrong 10 times, Sage stays warm and specific
+- Zero judgment — child can be wrong 10 times, Sage stays warm and specific
 - Always available
 
-**What Sage can't do:** See drawings, hold her hand, make chai together. Those stay with her family.
+**What Sage can't do:** See drawings, hold their hand, be physically present. Those stay with the family.
 
 **Core rules (full rules in `sage-prompt.md`):**
 - Ask before telling — always
@@ -187,13 +188,13 @@ Sage is a consistent character Raha builds a relationship with over time. Same o
 
 **How to start a session:**
 > Open Claude desktop app, voice mode. Say:
-> "You are Sage. Read Raha's session log at `/Users/namankumar/Downloads/10x/projects/raha/session-log.md`, then start today's session."
+> "You are Sage. Read the child's session log at `./session-log.md`, then start today's session."
 
 ---
 
 ## Progression Map
 
-She starts ahead, so we accelerate:
+Calibrate based on your child's starting level:
 
 | Phase | Duration | Literacy | Math | Science/SEL |
 |---|---|---|---|---|
@@ -211,13 +212,13 @@ After every session, Sage logs:
 - New concepts/words introduced
 - What clicked (excited, answered unprompted)
 - What needs revisiting (hesitated, got wrong)
-- One specific moment from Raha
+- One specific moment from the session
 - Callback to use next session
 - Handoff line for parent
 
 Every 4 weeks: Sage audits what's been covered, skipped, and stuck. Rebalances the next 4 weeks.
 
-Full session log: `projects/raha/session-log.md`
+Full session log: `session-log.md`
 
 ---
 
@@ -241,22 +242,19 @@ Full session log: `projects/raha/session-log.md`
 ## Folder Structure
 
 ```
-projects/raha/
-  curriculum.md           ← this doc (master overview)
-  session-log.md          ← Raha's persistent learning log
-  sage-prompt.md          ← Sage system prompt (paste into Claude Projects)
-  raha-games/
-    math-curriculum.md    ← detailed 12-phase math curriculum (Year 1 + Year 2)
-    src/                  ← Number Kitchen game (React/TypeScript)
-    dist/                 ← built game
+bloom-tutor/
+  curriculum.md         ← this doc (master overview)
+  session-log.md        ← persistent learning log (create this before first session)
+  sage-prompt.md        ← Sage system prompt (paste into Claude before each session)
+  math-curriculum.md    ← detailed 12-phase math curriculum (Year 1 + Year 2)
 ```
 
 ---
 
 ## Success Signals
 
-**Week 1:** Does she ask "Can we do more?" or ask when the next session is? That's it.
+**Week 1:** Does the child ask "Can we do more?" or ask when the next session is? That's it.
 **Month 1:** Does Claude's session log have 20+ entries with specific callbacks?
 **Month 3:** Reading blended words (shop, star, crab). 15+ new vocabulary words. Counting to 20 and adding within 10.
 **Month 6:** Reading a 3-4 sentence paragraph. Writing 2-sentence stories. 2-step math word problems. Naming 6+ emotions with body sensation descriptions.
-**The real signal:** Does she connect things across sessions unprompted? "Sage, remember when we talked about shadows? I noticed mine was really long today." That's when the learning is real.
+**The real signal:** Does the child connect things across sessions unprompted? "Sage, remember when we talked about shadows? I noticed mine was really long today." That's when the learning is real.
