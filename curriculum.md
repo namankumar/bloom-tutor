@@ -25,7 +25,7 @@ Fill this in before your first session. The more specific you are, the better Sa
 
 **Curriculum principle:** Your child's world is not background. It's the primary texture. Stories should feature their grandparents by name. Math word problems should use foods they know. Science experiments should connect to things in their home. This makes learning faster (familiar context reduces cognitive load) and makes sessions feel like their world, not school.
 
-**Example:** A child with an Indian dad and Persian mom might have stories featuring Dadi and Maman joon, math problems with pomegranates and samosas, and vocabulary that weaves in Hindi or Farsi words naturally. Whatever your child's world looks like — use it constantly.
+**Example:** A child in a multilingual household might have stories featuring grandparents by their family names, math problems with foods from their culture, and vocabulary that weaves in a second language naturally. Whatever your child's world looks like — use it constantly.
 
 ---
 
