@@ -6,7 +6,7 @@
 
 ## What This Is
 
-A web-based math game for Raha (age 5). She plays Chef Kiki's kitchen helper. Each session is 10-15 min, ends naturally when the meal is served, no "play again" button. Non-addictive by design — no streaks, no badges, no timers, no exploit loops.
+A web-based math game for [Child] (age 5). She plays Chef Kiki's kitchen helper. Each session is 10-15 min, ends naturally when the meal is served, no "play again" button. Non-addictive by design — no streaks, no badges, no timers, no exploit loops.
 
 7 stages map to a math curriculum: subitizing → counting → ten-frames → number bonds → addition → place value → multiplication. Each stage unlocks after mastery.
 
@@ -709,7 +709,7 @@ export default function SessionEnd() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    speak("Great cooking today, Raha! See you next time.")
+    speak("Great cooking today, [Child]! See you next time.")
   }, [])
 
   return (
@@ -809,7 +809,7 @@ export default function HomeScreen() {
           }}
         >
           <span style={{ fontSize: 64 }}>{game.emoji}</span>
-          {/* No text label visible — audio only for Raha. Label for parent accessibility. */}
+          {/* No text label visible — audio only for [Child]. Label for parent accessibility. */}
           <span style={{
             fontFamily: fonts.body, fontSize: 16, fontWeight: 700,
             color: colors.warmWhite, opacity: 0.9,
@@ -1059,7 +1059,7 @@ Stage 5 support rules:
 
 ## Stage 6 — Place Value (`src/stages/Stage6_PlaceValue.tsx`)
 
-Tens/ones mat with two DropZone columns (TENS, ONES). Two types of FoodItem: `eggCarton` (big, labeled "10") and `egg` (small). Puzzle gives a target number, Raha drags correct number of cartons + singles.
+Tens/ones mat with two DropZone columns (TENS, ONES). Two types of FoodItem: `eggCarton` (big, labeled "10") and `egg` (small). Puzzle gives a target number, [Child] drags correct number of cartons + singles.
 
 ```tsx
 // Target: e.g. 37 → need 3 cartons in TENS, 7 eggs in ONES
@@ -1336,7 +1336,7 @@ Not a plain div. A warm illustrated scene.
 
 1. `SessionEnd` has no play-again button. The only tap target is the home icon.
 2. `PUZZLES_PER_SESSION` is a constant (4). No infinite puzzle generation.
-3. No score, star, or streak is ever shown to Raha. Parent view only (hidden).
+3. No score, star, or streak is ever shown to [Child]. Parent view only (hidden).
 4. `endSession()` in `progress.ts` resets per-session counters — can't accumulate across sessions.
 5. No background music loop. Audio is speech only.
 6. Mastery unlocks next stage — but doesn't celebrate with points. It just… opens.
@@ -1387,7 +1387,7 @@ This lets you test the full stage-unlock flow in 10 minutes instead of sitting t
 
 ---
 
-### 3. Manual playthrough protocol (run yourself before Raha does)
+### 3. Manual playthrough protocol (run yourself before [Child] does)
 
 Open Chrome → DevTools → Toggle device toolbar → iPad Air (820×1180) → touch mode on. Volume up.
 
@@ -1416,7 +1416,7 @@ Open Chrome → DevTools → Toggle device toolbar → iPad Air (820×1180) → 
 
 **Test 5: Non-addictive audit**
 - [ ] No timer visible anywhere during gameplay
-- [ ] No score counter visible to Raha (debug overlay doesn't count)
+- [ ] No score counter visible to [Child] (debug overlay doesn't count)
 - [ ] No "play again" button on SessionEnd
 - [ ] No streak display ("3 days in a row!") anywhere
 - [ ] Wrong answer: no red color, no buzzer sound, no "X" symbol
@@ -1484,7 +1484,7 @@ These verify the game teaches what it's supposed to:
 
 ---
 
-### 5. Raha test (final gate)
+### 5. [Child] test (final gate)
 
 Only after all above pass. Hand her the iPad with Stage 1 loaded.
 

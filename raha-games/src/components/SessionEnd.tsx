@@ -20,7 +20,7 @@ export default function SessionEnd({ onGoHome, stageLabel }: Props) {
       playCue('feedback.complete')
       window.setTimeout(() => {
         if (cancelled) return
-        speak('You did lovely cooking today, Raha. See you soon.', { priority: 'normal' })
+        speak('Great cooking today. See you soon.', { priority: 'normal' })
       }, 260)
     })
     return () => {

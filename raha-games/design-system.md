@@ -1,6 +1,6 @@
 # Number Kitchen — Design System
 
-**Aesthetic:** Storybook / picture book. Warm, cozy, hand-drawn feel. Like a Bluey episode set in a kitchen — familiar, gentle, never loud. No neon. No dopamine flashes. A world Raha wants to sit inside.
+**Aesthetic:** Storybook / picture book. Warm, cozy, hand-drawn feel. Like a Bluey episode set in a kitchen — familiar, gentle, never loud. No neon. No dopamine flashes. A world [Child] wants to sit inside.
 
 ---
 
@@ -52,7 +52,7 @@
 | Chef speech bubble | Nunito | 28px | 600 | What the chef says (displayed + spoken) |
 | Label | Nunito | 20px | 400 | Stage labels, parent screen |
 
-**Rule:** Raha cannot read fluently yet. Words stay visible for literacy exposure, but meaning cannot depend on reading. Chef speech is spoken aloud when useful, and every important prompt/result also needs a non-reading visual cue.
+**Rule:** [Child] cannot read fluently yet. Words stay visible for literacy exposure, but meaning cannot depend on reading. Chef speech is spoken aloud when useful, and every important prompt/result also needs a non-reading visual cue.
 
 ---
 
@@ -95,14 +95,14 @@
 
 **Expressions (all via SVG path/transform animation):**
 - **Neutral:** soft smile, relaxed brows
-- **Encouraging (while Raha works):** raised brows, open smile, slight head tilt
+- **Encouraging (while [Child] works):** raised brows, open smile, slight head tilt
 - **Correct:** big smile, eyebrows up, slight bounce
 - **Hint (wrong):** brows gently furrowed, tilted head, reassuring expression — never sad or disappointed
 - **Session end:** eyes close in a warm squint, big smile
 
 **Animation:** Framer Motion. Idle: gentle breathing sway (scale 1→1.02, 3s loop). React: quick bounce (spring) on correct, soft head shake on hint.
 
-**Chef gender/name:** Gender-neutral design — round, soft, warm. Named "Chef Kiki" (easy for Raha to say). Chef Kiki wears a striped apron.
+**Chef gender/name:** Gender-neutral design — round, soft, warm. Named "Chef Kiki" (easy for [Child] to say). Chef Kiki wears a striped apron.
 
 ---
 
@@ -150,7 +150,7 @@
 
 ### Buttons
 
-Only one button visible per screen: the home icon (house shape, bottom left corner, always available). No other navigation. No "next", "back", or "skip" buttons for Raha.
+Only one button visible per screen: the home icon (house shape, bottom left corner, always available). No other navigation. No "next", "back", or "skip" buttons for [Child].
 
 ### Scaffolding Rules Across Stages
 

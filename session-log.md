@@ -1,15 +1,15 @@
-# Raha — Learning Log
+# [Child's name] — Learning Log
 
-**Child:** Raha, age 5
-**Started:** 2026-03-15
+**Child:** [Child's name], age [X]
+**Started:** [Date]
 **Tutor:** Sage (Claude voice mode)
 **Device:** Mac/laptop, Claude desktop app
 
 ## Profile
-- Reads simple CVC words already — start at blends and digraphs, not alphabet basics
-- Interests: animals, dinosaurs, space, fantasy/magic, stories, family
-- Family: Indian dad (Dadi, extended Indian family), Persian mom (Maman joon, extended Persian family)
-- All stories, math problems, and science examples draw from her bicultural world
+- [Reading level — e.g. "Reads simple CVC words already — start at blends and digraphs, not alphabet basics"]
+- Interests: [e.g. animals, dinosaurs, space, drawing, superheroes]
+- Family context: [e.g. multilingual household, grandparents' names, foods, traditions]
+- All stories, math problems, and science examples draw from their world
 
 ## Curriculum Week Rotation
 - Monday: Language & Literacy
@@ -49,7 +49,7 @@
 ---
 
 ## Science Questions Library
-| Question Posed | Date | Her Hypothesis | What Happened |
+| Question Posed | Date | Child's Hypothesis | What Happened |
 |---|---|---|---|
 | — | — | — | — |
 
@@ -58,12 +58,12 @@
 ## SEL Tracker
 
 ### Emotion Words Introduced
-| Word | Date | Her Body Description |
+| Word | Date | Body Description |
 |---|---|---|
 | — | — | — |
 
 ### Regulation Tools Introduced
-| Tool | Date | Her Response |
+| Tool | Date | Child's Response |
 |---|---|---|
 | — | — | — |
 
@@ -71,7 +71,7 @@
 
 ## Session Log
 
-### Session 1 — [DATE TBD]
+### Session 1 — [DATE]
 **Domain:** Assessment (disguised as games)
 **Activities:**
 - [ ] Opening ritual established
@@ -84,7 +84,7 @@
 
 **Needs revisiting:**
 
-**One moment from Raha:**
+**One moment from the session:**
 
 **Handoff line for parent:**
 
@@ -104,7 +104,7 @@
 
 **Needs revisiting:**
 
-**One moment from Raha:**
+**One moment from the session:**
 
 **Callback for next session:**
 

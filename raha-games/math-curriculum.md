@@ -1,4 +1,4 @@
-# Raha's Math Curriculum
+# Number Kitchen: Math Curriculum
 
 **Age:** 5 years old
 **Goal:** Build genuine number intuition — not rote memorization, not speed, not flashcards. A child who understands what 37 means is years ahead of a child who can recite it.
