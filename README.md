@@ -47,6 +47,8 @@ Full curriculum with research basis, progression map, and success signals is in 
 
 ## The key design decisions
 
+**Voice over text.** We chose voice over text because Bloom's effect comes from dialogue. The back-and-forth catches confusion in real time. Text chat flattens a session into a transcript. Voice preserves the rhythm of tutoring. Five days because Bloom's effect is cumulative. One session doesn't move the needle.
+
 **Session log as memory.** Claude has no memory across conversations by default. The session log is what creates continuity. Sage reads it at the start of every session, logs what happened at the end. The child builds a relationship with a tutor who actually remembers them.
 
 **Familiar context accelerates learning.** Stories, math problems, and science experiments use the child's own world: family names, foods, languages. Familiar context reduces cognitive load. The child isn't parsing an unfamiliar setting while also learning a new concept.
